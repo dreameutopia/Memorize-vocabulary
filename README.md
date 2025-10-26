@@ -2,6 +2,23 @@
 
 基于 Cloudflare Workers 和 D1 数据库实现的六级单词学习系统后端。
 
+## 📚 快速导航
+
+### 部署指南
+- 🚀 [5分钟快速部署](./doc/DEPLOY_QUICK.md) - 最简化流程
+- 📖 [完整部署指南](./doc/CLOUDFLARE_DEPLOY.md) - 详细步骤说明
+- 🎨 [图解部署教程](./doc/DEPLOY_VISUAL.md) - 可视化操作指南
+- 💻 [本地测试说明](./LOCAL_TEST.md) - 本地开发和测试
+
+### 开发文档
+- 📝 [API 接口文档](./API.md) - 完整的 API 说明
+- 📊 [项目总览](./PROJECT.md) - 项目架构和技术说明
+- 💾 [数据导入指南](./DATA_IMPORT.md) - 两种数据导入方式
+
+### 快速开始
+- 🏃 [快速启动指南](./QUICKSTART.md) - 命令行部署流程
+- ✅ [部署检查清单](./DEPLOYMENT.md) - 确保部署无遗漏
+
 ## 功能特性
 
 - ✅ 多租户系统，支持多用户
@@ -22,17 +39,22 @@
 ```
 backend/
 ├── src/
-│   └── index.ts          # Worker主文件
+│   └── index.ts              # Worker主文件
+├── doc/
+│   ├── CLOUDFLARE_DEPLOY.md  # 网页版部署完整指南
+│   ├── DEPLOY_QUICK.md       # 5分钟快速部署
+│   └── DEPLOY_VISUAL.md      # 图解部署教程
 ├── test/
-│   └── test.js           # 测试脚本
+│   └── test.js               # 测试脚本
 ├── scripts/
-│   └── init-data.js      # 数据初始化脚本
-├── schema.sql            # 数据库表结构
-├── vocabulary.json       # 单词数据（5523个六级单词）
-├── package.json          # 依赖配置
-├── tsconfig.json         # TypeScript配置
-├── wrangler.toml         # Cloudflare配置
-└── README.md            # 项目文档
+│   ├── init-data.js          # API数据初始化脚本
+│   └── convert_to_sql.py     # SQL文件生成脚本
+├── schema.sql                # 数据库表结构
+├── vocabulary.json           # 单词数据（5523个六级单词）
+├── package.json              # 依赖配置
+├── tsconfig.json             # TypeScript配置
+├── wrangler.toml             # Cloudflare配置
+└── README.md                 # 项目文档
 ```
 
 ## API 接口
