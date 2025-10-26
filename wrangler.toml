@@ -6,7 +6,7 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "cet6_vocabulary"
-database_id = "your-database-id-here"
+database_id = "e2b24813-181d-4504-b985-d020b8a19abe"
 
 # 设置Workers的配置
 [build]
