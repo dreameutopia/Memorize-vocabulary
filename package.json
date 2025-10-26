@@ -8,6 +8,9 @@
     "deploy": "wrangler deploy",
     "build": "tsc",
     "init-db": "wrangler d1 execute cet6_vocabulary --file=./schema.sql",
+    "generate-sql": "python scripts/convert_to_sql.py",
+    "import-data": "wrangler d1 execute cet6_vocabulary --local --file=./data.sql",
+    "import-data-remote": "wrangler d1 execute cet6_vocabulary --file=./data.sql",
     "test": "node test/test.js"
   },
   "keywords": [

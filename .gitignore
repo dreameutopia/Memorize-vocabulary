@@ -6,3 +6,6 @@ dist/
 .DS_Store
 .env
 .cache
+
+# 生成的 SQL 文件（每次部署前重新生成）
+data.sql
