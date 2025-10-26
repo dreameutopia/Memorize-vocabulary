@@ -1,0 +1,19 @@
+name = "cet6-vocabulary-backend"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# D1 数据库绑定
+[[d1_databases]]
+binding = "DB"
+database_name = "cet6_vocabulary"
+database_id = "your-database-id-here"
+
+# 设置Workers的配置
+[build]
+command = "npm run build"
+
+[env.production]
+# 生产环境配置
+
+[env.staging]
+# 测试环境配置

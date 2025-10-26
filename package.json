@@ -1,0 +1,26 @@
+{
+  "name": "cet6-vocabulary-backend",
+  "version": "1.0.0",
+  "description": "六级单词刷词软件后端 - Cloudflare Workers + D1",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc",
+    "init-db": "wrangler d1 execute cet6_vocabulary --file=./schema.sql",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "d1",
+    "vocabulary",
+    "cet6"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.1"
+  }
+}
